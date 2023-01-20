@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:background="@drawable/arkaplan2"
+    >
+
+    <EditText
+        android:id="@+id/emaliText"
+        android:layout_width="254dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Email Giriniz"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="254dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Şifre Giriniz"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emaliText" />
+
+
+    <!--<Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:onClick="signInClick"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="signUpClick"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />-->
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/round_button"
+        android:onClick="signInClick"
+        android:text="Giriş Yap"
+        android:textColor="#ffff"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/round_button"
+        android:onClick="signUpClick"
+        android:text="Kayıt Ol"
+        android:textColor="#ffff"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <TextView
+        android:id="@+id/sifremiUnuttumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sifremi Unuttum!"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+        app:layout_constraintVertical_bias="0.456" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
